@@ -35,28 +35,13 @@ body {
   position: relative;
 }
 
-.loader {
-  border: 2px solid rgba(75,181,234,1);
-  position: absolute;
-  top: 15%;
-  left:8%;
-  width: 100px;
-  height:1px;
-  /* border-radius: 50%; */
-  /* width: 700px;
-  height:300px; */
-  /* border-left-color: rgba(58,96,115,0); */
-  z-index: 2;
-  /* animation: moveRight 3s forwards; */
-}
-
 .path {
   stroke-dasharray: 2000;
   stroke-dashoffset: 2000;
-  animation: dash 5s linear forwards;
+  animation: drawline 5s linear forwards;
 }
 
-@keyframes dash {
+@keyframes drawline {
   from {
     stroke-dashoffset: 2000;
   }
