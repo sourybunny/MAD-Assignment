@@ -17,8 +17,8 @@ html {
  }
 
 body {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
+  font-family: "Open sans", sans-serif;
+  /* font-weight: 400; */
   line-height: 1.7;
   color: #fff;
   padding: 3rem;
@@ -47,18 +47,59 @@ a:hover {
   background: -webkit-linear-gradient(to bottom, #3A6073, #16222A);
   background: linear-gradient(to bottom, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   width: 55%;
+  position: relative;
+
+}
+
+.panel__left__content{
+  position: absolute;
+  top: 40%;
+  left: 53%;
+  transform: translate(-45%, -50%);
+  font-size: 1.3rem;
+  width: 80%;
+  /* align-items: center; */
+}
+
+.panel__left__content--subheading {
+  display: block;
+  font-weight: 300;
+  font-size: 2.2rem;
+
+}
+
+.panel__left__content--heading {
+  display: block;
+  font-weight: 100;
+  font-size: 5.4rem;
+  margin-top: -20px;
+  /* letter-spacing: 2px; */
+}
+
+.panel__left__content--text {
+  display: block;
+  font-weight: 100;
+  opacity: 0.7;
+}
+
+.form .form-input {
+  outline: none;
+  border: none;
+  opacity: 0.7;
+  border-bottom: 1px solid white;
+  padding: 1.5rem 0;
+  background: none;
+  width: 80%;
 
 }
 
 .panel__right {
   width: 45%;
-  /* background: #777; */
   height: 100vh;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
 }
 
 .panel__right .video {
@@ -78,16 +119,13 @@ nav {
 
 header nav {
 	display: flex;
-  margin: 5% 20%;
-  margin-right: -15px;
-}
-
-header nav li {
-	margin: 0 1.5rem;
+  margin: 5% 15%;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .panel__right--nav li {
-  margin-left: 55%;
+  margin-left: 65%;
   border: 1px solid #fff;
   border-radius: 3%;
   padding: .5rem 1rem;
@@ -97,12 +135,13 @@ header nav li {
   width: 100%;
   height: 10%;
 }
+
 .nav-logo {
   background-image: url(../images/logov2.png);
   background-repeat: no-repeat;
   background-size: contain;
   width: 18%;
-  height: 1.7rem;
+  height: 1.8rem;
 }
 
 a {
